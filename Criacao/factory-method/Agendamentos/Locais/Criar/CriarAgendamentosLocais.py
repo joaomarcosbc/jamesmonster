@@ -1,6 +1,6 @@
-from criarAgendamento import criar_agendamento
+from CriarAgendamento import criar_agendamento
 
-class CriarBarbearia(CriarAgendamentos):
+class CriarBarbearia(CriarAgendamento):
     """
     Agendar horario na barbearia
     """
@@ -8,7 +8,7 @@ class CriarBarbearia(CriarAgendamentos):
         return ListarBarbearia.mostrar_agendamento()
 
 
-class CriarSalaodeBeleza(CriarAgendamentos):
+class CriarSalaodeBeleza(CriarAgendamento):
     """
     Agendar horario no salao
     """
@@ -16,7 +16,7 @@ class CriarSalaodeBeleza(CriarAgendamentos):
         return ListarSalaodeBeleza.mostrar_agendamento()
 
 
-class CriarRestaurante(CriarAgendamentos):
+class CriarRestaurante(CriarAgendamento):
     """
     Agendar lugar no restaurante
     """
