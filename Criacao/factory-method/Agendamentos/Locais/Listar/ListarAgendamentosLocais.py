@@ -1,6 +1,6 @@
-from ListarAgendamento import listar_agendamento
+from ListarAgendamento import mostrar_agendamento
 
-class ListarBarbearia(Agendamentos):
+class ListarBarbearia(ListarAgendamento):
     """
     Agendar horario na barbearia
     """
@@ -8,7 +8,7 @@ class ListarBarbearia(Agendamentos):
         print(f"Olá, seu agendamento na barbearia foi um sucesso")
 
 
-class ListarSalaodeBeleza(Agendamentos):
+class ListarSalaodeBeleza(ListarAgendamento):
     """
     Alugar horario no salao
     """
@@ -17,7 +17,7 @@ class ListarSalaodeBeleza(Agendamentos):
         
 
 
-class ListarRestaurante(Agendamentos):
+class ListarRestaurante(ListarAgendamento):
     """
     Alugar lugar no restaurante
     """
